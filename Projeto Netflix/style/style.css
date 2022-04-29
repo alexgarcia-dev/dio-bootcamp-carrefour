@@ -1,0 +1,121 @@
+:root {
+  --title-color: rgb(134, 41, 196);
+  --background: hsla(0, 0%, 13%, 1);
+  --text-color: rgba(255, 255, 255, 0.792);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: auto;
+}
+
+button {
+  color: var(--background);
+  padding: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin-right: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: black;
+  transition: 0.3s;
+}
+
+.container {
+  margin: 1rem 2rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .title {
+  color: var(--title-color);
+}
+
+header .container .title span {
+  color: var(--text-color);
+}
+
+header nav a{
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header nav a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.main-movie {
+  background: url("https://www.themoviedb.org/t/p/w1000_and_h563_face/mdviAeQNEAOSddeViLMPh3Ihiqb.jpg");
+
+  height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .movie-title {
+  margin-bottom: 1rem;
+}
+
+.main-movie .movie-description {
+  width: 50%
+}
+
+.main-movie .btn {
+  margin-top: 5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.carousel-movie {
+  border-top: 1px solid;
+}
+
+.carousel-tittle {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.item img:hover {
+  cursor: pointer;
+  padding: 1rem;
+  border-bottom: 1px;
+  transition: 1s;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  background-color: black
+}
